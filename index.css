@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+
+  --default-font: 'Merriweather Sans', sans-serif;
+}
+
+body {
+  display: flex;
+
+  background-color: var(--body-bg-color);
+  padding: 2rem;
+  font-family: var(--default-font);
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--bg-cards);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.413);
+  margin: 20px;
+}
+
+.userInfo {
+  width: 365px;
+  flex-shrink: 0;
+}
+
+#user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+#user img {
+  width: 50%;
+  border-radius: 50%;
+
+  border: 3px solid green;
+}
+
+#user #name {
+  font-size: 28px;
+  margin: 10px 0px;
+  font-weight: 700;
+}
+
+#user #job {
+  font-size: 14px;
+}
+
+#userContact {
+  padding: 2rem;
+}
+
+#userContact ul li{
+  gap: .8rem;
+  display: flex;
+  line-height: 2.6rem;
+}
+
+#tecnologies {
+  padding: 2rem;
+}
+
+#tecnologies h2 {
+  margin-bottom: 1.3rem;
+}
+
+#tecnologies div {
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+
+#tecnologies a {
+  background-color: var(--bg-techs);
+  color: black;
+  text-decoration: none;
+  font-size: .7rem;
+  font-weight: bold;
+  padding: .3rem;
+  border-radius: 1rem;
+
+  flex-wrap: wrap;
+  flex-basis: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#myProjects {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1.5rem;
+}
+
+#myProjects #myProj {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projeto {
+  padding: 1rem;
+  min-width: 400px;
+  flex-grow: 1;
+}
+
+.projeto h3 {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.projeto p {
+  margin: 1.5rem 0;
+}
+
+.projectInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectRate {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+} 
+
+.projectTec {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  background-color: green;
+  border-radius: 0.5rem;
+}
